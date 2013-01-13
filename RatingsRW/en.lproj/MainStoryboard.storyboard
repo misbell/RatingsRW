@@ -4,21 +4,37 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Players View Controller - Players-->
         <scene sceneID="9dd-aE-pxf">
             <objects>
-                <tableViewController id="TUN-CB-hi2" sceneMemberID="viewController">
+                <tableViewController id="TUN-CB-hi2" customClass="PlayersViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ki0-UE-4rR">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="NVe-h0-2TD">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PlayerCell" textLabel="zUi-3G-8s2" detailTextLabel="kz2-yF-QmC" style="IBUITableViewCellStyleSubtitle" id="NVe-h0-2TD">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zUi-3G-8s2">
+                                            <rect key="frame" x="10" y="2" width="38" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kz2-yF-QmC">
+                                            <rect key="frame" x="10" y="24" width="47" height="18"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                             </tableViewCell>
@@ -28,13 +44,13 @@
                             <outlet property="delegate" destination="TUN-CB-hi2" id="ang-iS-KbJ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="yQ7-Ic-Mug"/>
+                    <navigationItem key="navigationItem" title="Players" id="yQ7-Ic-Mug"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nrS-bJ-2Bw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1546" y="-774"/>
         </scene>
-        <!--View Controller - Item 2-->
+        <!--View Controller - Gestures-->
         <scene sceneID="AqN-8n-9eT">
             <objects>
                 <viewController id="64J-FO-iDz" sceneMemberID="viewController">
@@ -52,7 +68,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Xfl-lB-FJQ"/>
+                    <tabBarItem key="tabBarItem" title="Gestures" image="Gestures.png" id="Xfl-lB-FJQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3s1-4o-wli" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -81,7 +97,7 @@
         <scene sceneID="tLC-FX-7fJ">
             <objects>
                 <navigationController id="KUp-z0-pKr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Players" id="Zqw-6L-JLU"/>
+                    <tabBarItem key="tabBarItem" title="Players" image="Players.png" id="Zqw-6L-JLU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2RC-Lw-ddP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -97,6 +113,15 @@
             <point key="canvasLocation" x="1020" y="-774"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Gestures.png" width="30" height="30"/>
+        <image name="Players.png" width="30" height="30"/>
+    </resources>
+    <classes>
+        <class className="PlayersViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PlayersViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
