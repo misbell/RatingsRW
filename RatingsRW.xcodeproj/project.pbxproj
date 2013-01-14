@@ -33,6 +33,7 @@
 		8B52CC5616A332EA0084D027 /* Players.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B52CC3E16A332EA0084D027 /* Players.png */; };
 		8B52CC5716A332EA0084D027 /* Players@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B52CC3F16A332EA0084D027 /* Players@2x.png */; };
 		8B52CC5A16A338D90084D027 /* PlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B52CC5916A338D90084D027 /* PlayersViewController.m */; };
+		8B52CC5D16A33BE00084D027 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B52CC5C16A33BE00084D027 /* Player.m */; };
 		8BD0CFD316A2EE6C00F3EACD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD0CFD216A2EE6C00F3EACD /* UIKit.framework */; };
 		8BD0CFD516A2EE6C00F3EACD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD0CFD416A2EE6C00F3EACD /* Foundation.framework */; };
 		8BD0CFD716A2EE6C00F3EACD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD0CFD616A2EE6C00F3EACD /* CoreGraphics.framework */; };
@@ -75,6 +76,8 @@
 		8B52CC3F16A332EA0084D027 /* Players@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Players@2x.png"; sourceTree = "<group>"; };
 		8B52CC5816A338D90084D027 /* PlayersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayersViewController.h; path = ../PlayersViewController.h; sourceTree = "<group>"; };
 		8B52CC5916A338D90084D027 /* PlayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayersViewController.m; path = ../PlayersViewController.m; sourceTree = "<group>"; };
+		8B52CC5B16A33BE00084D027 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		8B52CC5C16A33BE00084D027 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		8BD0CFCE16A2EE6C00F3EACD /* RatingsRW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RatingsRW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD0CFD216A2EE6C00F3EACD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8BD0CFD416A2EE6C00F3EACD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -178,6 +181,8 @@
 				8BD0CFEA16A2EE6C00F3EACD /* MainStoryboard.storyboard */,
 				8BD0CFED16A2EE6C00F3EACD /* ViewController.h */,
 				8BD0CFEE16A2EE6C00F3EACD /* ViewController.m */,
+				8B52CC5B16A33BE00084D027 /* Player.h */,
+				8B52CC5C16A33BE00084D027 /* Player.m */,
 				8BD0CFD916A2EE6C00F3EACD /* Supporting Files */,
 			);
 			path = RatingsRW;
@@ -292,6 +297,7 @@
 				8BD0CFEF16A2EE6C00F3EACD /* ViewController.m in Sources */,
 				8B52CC2516A329120084D027 /* TwoViewController.m in Sources */,
 				8B52CC5A16A338D90084D027 /* PlayersViewController.m in Sources */,
+				8B52CC5D16A33BE00084D027 /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
